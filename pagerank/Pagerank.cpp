@@ -5,11 +5,12 @@ using namespace std;
 using namespace Eigen;
 
 const int iterations = 1000;
+const int N = 5;
 
 int main()
 {
-    MatrixXd M = MatrixXd(5, 5);
-    VectorXd v = VectorXd(5);
+    MatrixXd M = MatrixXd(N, N);
+    VectorXd v = VectorXd(M.cols());
     float d = 0.85;
 
     M << 0, 0, 0, 0, 1,
